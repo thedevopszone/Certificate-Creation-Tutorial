@@ -36,4 +36,10 @@ The command will prompt Alice with these questions:
 ● A challenge password []: {this can be used as a secret nonce between Alice and CA}
 ```
 
+Aside: generating a self-signed certificate for the CA
+```
+openssl req -x509 -new -nodes -key rootkey.pem -sha256 -days 1024 -out root.crt
+```
+
+
 
